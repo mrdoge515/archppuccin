@@ -1,0 +1,36 @@
+* {
+    font-family: NotoSans Nerd;
+    font-size: 15px;
+}
+
+window#waybar {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#custom-weather, #custom-media, .modules-center, .modules-right {
+    background-color: rgba(30, 30, 46, 0.5);
+    margin: 5px 15px 0 15px;
+    border-radius: 15px;
+}
+
+#custom-weather, #custom-media {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+#custom-media {
+    margin: 5px 0 0 0;
+}
+
+#network {
+    margin-left: 10px;
+}
+
+#wireplumber, #battery, #clock {
+    margin-left: 20px;
+}
+
+#clock {
+    margin-right: 10px;
+}
