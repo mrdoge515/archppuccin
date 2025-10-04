@@ -1,0 +1,202 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "active_pane_modifiers": {
+    "border_size": 0,
+    "inactive_opacity": 1
+  },
+  "bottom_dock_layout": "right_aligned", // THIS DOESNT DO SHIT
+  "agent_font_size": null,
+  "allow_rewrap": "anywhere",
+  "auto_indent": true,
+  "auto_indent_on_paste": true,
+  "auto_install_extensions": {},
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 6000
+    }
+  },
+  "autoscroll_on_clicks": true,
+  "auto_signature_help": true,
+  "show_signature_help_after_edits": true,
+  "auto_update": false,
+  "base_keymap": "VSCode",
+  "buffer_font_family": "JetBrains Mono",
+  "buffer_font_features": {
+    "calt": true
+  },
+  "buffer_font_fallbacks": [
+    ".ZedMono"
+  ],
+  "buffer_font_size": 14,
+  "buffer_font_weight": 450,
+  "buffer_line_height": "comfortable",
+  "centered_layout": {
+    "left_padding": 0.15,
+    "right_padding": 0.15
+  },
+  "close_on_file_delete": false,
+  "confirm_quit": false,
+  "diagnostics_max_severity": null,
+  "disable_ai": true,
+  "double_click_in_multibuffer": "select",
+  "drop_target_size": 0.25,
+  "edit_predictions": {
+    "disabled_globs": [
+      "**/.env*",
+      "**/*.pem",
+      "**/*.key",
+      "**/*.cert",
+      "**/*.crt",
+      "**/.dev.vars",
+      "**/secrets.yml"
+    ]
+  },
+  "edit_predictions_disabled_in": [
+    "comment",
+    "string"
+  ],
+  "current_line_highlight": "gutter",
+  "selection_highlight": true,
+  "rounded_selection": true,
+  "cursor_blink": true,
+  "cursor_shape": "bar",
+  "gutter": {
+    "line_numbers": true,
+    "runnables": false,
+    "breakpoints": true,
+    "folds": true,
+    "min_line_number_digits": 4
+  },
+  "hide_mouse": "on_typing_and_movement",
+  "snippet_sort_order": "inline",
+  "scrollbar": {
+    "show": "auto",
+    "cursors": true,
+    "git_diff": false,
+    "search_results": true,
+    "selected_text": true,
+    "selected_symbol": true,
+    "diagnostics": "error",
+    "axes": {
+      "horizontal": false,
+      "vertical": true
+    }
+  },
+  "minimap": {
+    "show": "never",
+    "thumb": "always",
+    "thumb_border": "none",
+    "current_line_highlight": "all"
+  },
+  "tab_bar": {
+    "show": true,
+    "show_nav_history_buttons": false,
+    "show_tab_bar_buttons": false
+  },
+  "tabs": {
+    "close_position": "right",
+    "file_icons": true,
+    "git_status": true,
+    "activate_on_close": "history",
+    "show_close_button": "hover",
+    "show_diagnostics": "errors"
+  },
+  "inline_code_actions": true,
+  "drag_and_drop_selection": {
+    "enabled": true,
+    "delay": 300
+  },
+  "toolbar": {
+    "breadcrumbs": true,
+    "quick_actions": false,
+    "selections_menu": true,
+    "agent_review": false,
+    "code_actions": true
+  },
+  "use_system_window_tabs": false,
+  "enable_language_server": true,
+  "ensure_final_newline_on_save": true,
+  "expand_excerpt_lines": 5,
+  "excerpt_context_lines": 2,
+  "extend_comment_on_newline": false,
+  "status_bar": {
+    "active_language_button": true,
+    "cursor_position_button": false
+  },
+  "lsp": {},
+  "global_lsp_settings": {
+    "button": true
+  },
+  "lsp_highlight_debounce": 75,
+  "features": {
+    "edit_prediction_provider": null
+  },
+  "format_on_save": "on",
+  "formatter": "language_server",
+  "use_autoclose": true,
+  "always_treat_brackets_as_autoclosed": true,
+  "file_scan_exclusions": [
+    "**/.git",
+    "**/.svn",
+    "**/.hg",
+    "**/.jj",
+    "**/CVS",
+    "**/.DS_Store",
+    "**/Thumbs.db",
+    "**/.classpath",
+    "**/.settings"
+  ],
+  "file_scan_inclusions": [
+    ".env*"
+  ],
+  // https://zed.dev/docs/configuring-zed#file-types
+  "diagnostics": {
+    "include_warnings": true,
+    "inline": {
+      "enabled": true,
+      "update_debounce_ms": 150,
+      "padding": 4,
+      "min_column": 0,
+      "max_severity": null
+    }
+  },
+  "git": {
+    "git_gutter": "tracked_files",
+    "inline_blame": {
+      "enabled": false
+    },
+    "branch_picker": {
+      "show_author_name": true
+    },
+    "hunk_style": "staged_hollow"
+  },
+  "go_to_definition_fallback": "none",
+  "hard_tabs": false,
+  "helix_mode": false,
+  "indent_guides": {
+    "enabled": true,
+    "line_width": 2,
+    "active_line_width": 1,
+    "coloring": "indent_aware",
+    "background_coloring": "disabled"
+  },
+  "hover_popover_enabled": true,
+  "hover_popover_delay": 300,
+  "icon_theme": "Material Icon Theme",
+  "image_viewer": {
+    "unit": "binary"
+  },
+  // https: //zed.dev/docs/configuring-zed#inlay-hints
+  "theme": {
+    "mode": "dark",
+    "dark": "Catppuccin Mocha",
+    "light": "Catppuccin Latte"
+  }
+}
