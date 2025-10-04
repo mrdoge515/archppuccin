@@ -1,0 +1,21 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 40,
+
+    "modules-left": [
+        "custom/weather",
+        "custom/media"
+    ],
+    "modules-center": [
+        "hyprland/workspaces"
+    ],
+    "modules-right": [
+        "network",
+        "wireplumber",
+        "battery",
+        "clock"
+    ],
+
+    "include": "~/.config/waybar/modules.jsonc"
+}

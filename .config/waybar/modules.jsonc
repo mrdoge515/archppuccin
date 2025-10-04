@@ -1,0 +1,55 @@
+{
+    "custom/weather": {
+        "exec": "$HOME/.config/waybar/scripts/weather.py",
+        "return-type": "json",
+        "interval": 120
+    },
+    "custom/media": {
+        "exec": "$HOME/.config/waybar/scripts/mediaplayer.py 2> /dev/null",
+        "return-type": "json",
+        "hide-empty-text": true,
+        "format": "{icon} {text}",
+        "on-click": "playerctl play-pause",
+        "on-click-right": "playerctl stop",
+        "escape": true
+    },
+    
+    "hyprland/workspaces": {
+        
+        
+    },
+
+    "network": {
+        "format": "???",
+        "format-ethernet": " ",
+        "format-wifi": "{essid} {icon}",
+        "format-disconnected": " ",
+        "format-icons": ["󰤟 ", "󰤢 ", "󰤥 ", "󰤨 "],
+        "on-click": "kitty nmtui",
+        "tooltip-format": "???",
+        "tooltip-format-ethernet": "Interface: {ifname}\nIP: {ipaddr}",
+        "tooltip-format-wifi": "IP: {ipaddr}\nSignal strength: {signalStrength}",
+        "tooltip-format-disconnected": "Not connected to any network"
+    },
+    "wireplumber": {
+        "format": "{volume}% {icon}",
+        "format-muted": " ",
+        "format-icons": [" ", " ", " "],
+        "on-click": "pavucontrol",
+        "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+    },
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 10
+        },
+        "format": "{capacity}% {icon}",
+        "format-icons": [" ", " ", " ", " ", " "],
+        "format-charging": "{capacity}%  ",
+        "on-click": "kitty sudo powertop"
+    },
+    "clock": {
+        "format": "{:%H:%M}  ",
+        "tooltip-format": "{:%d/%m/%Y}"
+    }
+}
