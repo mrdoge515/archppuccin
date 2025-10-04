@@ -1,11 +1,11 @@
 {
     "custom/weather": {
-        "exec": "$HOME/.config/waybar/scripts/weather.py",
+        "exec": "$HOME/.config/scripts/weather.py",
         "return-type": "json",
         "interval": 120
     },
     "custom/media": {
-        "exec": "$HOME/.config/waybar/scripts/mediaplayer.py 2> /dev/null",
+        "exec": "$HOME/.config/scripts/mediaplayer.py 2> /dev/null",
         "return-type": "json",
         "hide-empty-text": true,
         "format": "{icon} {text}",

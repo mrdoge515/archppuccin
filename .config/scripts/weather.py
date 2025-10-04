@@ -49,10 +49,10 @@ def get_tomorrow_forecast():
     response = requests.get(url)
     response.raise_for_status()
     data = response.json()
-    
+
     tomorrow = (datetime.now(timezone.utc) + timedelta(days=1)).date()
     forecasts = [item for item in data['list'] if datetime.fromtimestamp(item['dt']).date() == tomorrow]
-    
+
     if not forecasts:
         return "No forecast available"
 
