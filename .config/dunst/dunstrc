@@ -1,0 +1,61 @@
+[global]
+    # Display
+    monitor = 0
+    follow  = none
+
+    # Geometry
+    width   = 300
+    height  = (0, 500)
+    origin  = top-right
+    offset  = (15, 15)
+    scale   = 0
+    notification_limit = 10
+
+    # Progress bar
+    progress_bar = true
+    progress_bar_height = 20
+    progress_bar_frame_width = 2
+    progress_bar_corner_radius = 8
+
+    # Icon
+    icon_corner_radius = 5
+
+    # d
+    indicate_hidden = yes
+    separator_height = 2
+    padding = 8
+
+    # Frame
+    frame_width = 2
+    frame_color = "#89b4fa"
+    gap_size = 5
+    separator_color = frame_color
+
+    sort = urgency_descending
+
+    # Font
+    font = "NotoSans Nerd" 11
+    markup = full
+    alignment = center
+    vertical_alignment = center
+
+    # icon
+    icon_position = left
+    min_icon_size = 100
+    max_icon_size = 100
+
+    corner_radius = 15
+
+
+[urgency_low]
+background = "#1e1e2e"
+foreground = "#cdd6f4"
+
+[urgency_normal]
+background = "#1e1e2e"
+foreground = "#cdd6f4"
+
+[urgency_critical]
+background = "#1e1e2e"
+foreground = "#cdd6f4"
+frame_color = "#fab387"
