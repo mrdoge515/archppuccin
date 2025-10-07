@@ -10,13 +10,14 @@ mkdir -p $dir
 all_screens() {
     grim "$dir$name"
     cat "$dir$name" | wl-copy --type image/png
-    notify-send "Screenshot created and copied to clipboard"
+    notify-send -i $dir$name "Screenshot created and copied to clipboard"
     exit
 }
 
 area() {
     grim -g "$(slurp)" "$dir$name"
     cat "$dir$name" | wl-copy --type image/png
+    notify-send -i $dir$name "Screenshot of the area created and copied to clipboard"
     exit
 }
 
