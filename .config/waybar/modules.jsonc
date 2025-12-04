@@ -25,7 +25,7 @@
         "format-wifi": "{essid} {icon}",
         "format-disconnected": " ",
         "format-icons": ["󰤟 ", "󰤢 ", "󰤥 ", "󰤨 "],
-        "on-click": "kitty nmtui",
+        "on-click": "kitty bash -c nmtui",
         "tooltip-format": "???",
         "tooltip-format-ethernet": "Interface: {ifname}\nIP: {ipaddr}",
         "tooltip-format-wifi": "IP: {ipaddr}\nSignal strength: {signalStrength}",

@@ -73,6 +73,8 @@ if [ -n "$SSH_AUTH_SOCK" ]; then
 	fi
 fi
 
+export NEWT_COLORS="root=#1e1e2e,#cdd6f4 border=#313244,#7f849c window=#1e1e2e,#1e1e2e shadow=#11111b,#11111b title=#f2cdcd,#1e1e2e button=#313244,#cba6f7 button_active=#313244,#f9e2af actbutton=#f9e2af,#1e1e2e compactbutton=#f9e2af,#1e1e2e checkbox=#f38ba8,#1e1e2e entry=#94e2d5,#1e1e2e disentry=#585b70,#585b70 textbox=#94e2d5,#1e1e2e acttextbox=#f5c2e7,#1e1e2e label=#89dceb,#1e1e2e listbox=#94e2d5,#1e1e2e actlistbox=#f5c2e7,#1e1e2e sellistbox=#f38ba8,#1e1e2e actsellistbox=#1e1e2e,#f9e2af"
+
 
 ##################
 ### oh-my-posh ###
