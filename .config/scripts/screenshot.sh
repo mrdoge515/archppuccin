@@ -2,7 +2,7 @@
 # requires: slurp, grim, wl-clipboard (wl-copy)
 # optional: libnotify (notify-send), gimp
 
-dir="$HOME/pictures/screenshots/"
+dir="$HOME/Pictures/screenshots/"
 name="screenshot_$(date +%d%m%Y_%H%M%S).png"
 
 mkdir -p $dir
