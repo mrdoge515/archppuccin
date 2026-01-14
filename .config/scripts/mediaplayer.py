@@ -1,16 +1,18 @@
 #!/usr/bin/env python3
 import gi
+
 gi.require_version("Playerctl", "2.0")
-from gi.repository import Playerctl, GLib
-from gi.repository.Playerctl import Player
 import argparse
-import logging
-import sys
-import signal
-import gi
 import json
+import logging
 import os
+import signal
+import sys
 from typing import List
+
+import gi
+from gi.repository import GLib, Playerctl
+from gi.repository.Playerctl import Player
 
 logger = logging.getLogger(__name__)
 
@@ -105,7 +107,7 @@ class PlayerManager:
         current_player = self.get_first_playing_player()
         if current_player is not None:
             self.on_metadata_changed(current_player, current_player.props.metadata)
-        else:    
+        else:
             self.clear_output()
 
     def on_metadata_changed(self, player, metadata, _=None):
@@ -113,7 +115,6 @@ class PlayerManager:
         player_name = player.props.player_name
         artist = player.get_artist()
         title = player.get_title()
-        title = title.replace("&", "&amp;")
 
         track_info = ""
         if player_name == "spotify" and "mpris:trackid" in metadata.keys() and ":ad:" in player.props.metadata["mpris:trackid"]:
