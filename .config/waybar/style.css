@@ -48,6 +48,7 @@ window#waybar {
 
 #wireplumber,
 #battery,
+#custom-dnd,
 #clock {
   margin-left: 20px;
 }

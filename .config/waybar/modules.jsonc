@@ -58,6 +58,11 @@
     "format-charging": "{capacity}%  ",
     "on-click": "kitty sudo powertop"
   },
+  "custom/dnd": {
+    "exec": "~/.config/scripts/dnd.sh",
+    "on-click": "dunstctl set-paused toggle",
+    "restart-interval": 1,
+  },
   "clock": {
     "format": "{:%H:%M}  ",
     "tooltip-format": "{:%d/%m/%Y}"
