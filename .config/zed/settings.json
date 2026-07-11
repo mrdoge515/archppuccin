@@ -7,14 +7,22 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "agent_servers": {
+    "github-copilot-cli": {
+      "type": "registry"
+    }
+  },
+  "outline_panel": {
+    "dock": "left"
+  },
   "active_pane_modifiers": {
     "border_size": 0,
     "inactive_opacity": 1
   },
-  "bottom_dock_layout": "right_aligned", // THIS DOESNT DO SHIT
+  "bottom_dock_layout": "right_aligned",
   "agent_ui_font_size": null,
   "allow_rewrap": "anywhere",
-  "auto_indent": true,
+  "auto_indent": "syntax_aware",
   "auto_indent_on_paste": true,
   "auto_install_extensions": {},
   "autosave": {
@@ -74,7 +82,7 @@
     "folds": true,
     "min_line_number_digits": 4
   },
-  "hide_mouse": "on_typing_and_movement",
+  "hide_mouse": "on_typing_and_action",
   "snippet_sort_order": "inline",
   "scrollbar": {
     "show": "auto",
@@ -232,7 +240,7 @@
     "light": "Catppuccin Latte"
   },
   "title_bar": {
-    "show_branch_icon": true,
+    "show_branch_status_icon": true,
     "show_branch_name": true,
     "show_project_items": true,
     "show_onboarding_banner": false,
@@ -266,14 +274,9 @@
     "starts_open": true
   },
   "agent": {
-    "tool_permissions": {
-      "default": "allow"
-    },
-    "default_profile": "write",
-    "default_model": {
-      "provider": "copilot_chat",
-      "model": "gpt-5.3-codex"
-    },
+    "dock": "right",
+    "default_profile": "ask",
+    "favorite_models": [],
     "model_parameters": []
   },
   "collaboration_panel": {
